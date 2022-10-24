@@ -1,3 +1,4 @@
+// index.html
 .header-container{
     max-width: $sizemax;
     width: $sizewid;
@@ -39,7 +40,7 @@
             height: 177px;
             h3{
                 line-height: 35px;
-                @include font ($font-nino, bold, 30px, $color-ow);
+                @include font ($font-nino, bold, 30px, $color-grey);
                 @include d-flex(flex, space-between, flex-start, wrap, column);
                 span{
                     font-family: $font-roboto;
@@ -53,7 +54,177 @@
     width: $sizewid;
     margin: 0 auto;
     margin-top: 120px;
+    @include d-flex-wrap(flex,wrap,space-between);
     .media-page-title{
-        @include font ()
+        @include font ($font-roboto, 500, 24px, $color-black);
+        width:$sizewid;
+        margin-bottom: 30px;
     }
+    .left-block{
+        max-width: $blocksize;
+        width: $sizewid;
+        background-color: #F2F2F2;
+        padding:13px 0px 41px 20px;
+        @include d-inline(inline-block,top);
+        @include d-flex-wrap(flex,wrap,space-around);
+        h3{
+            @include font($font-roboto, 500, 22px, $color-blue);
+            width: $sizewid;
+            margin-bottom: 12px;
+        }
+        p{
+            @include font($font-roboto,500,20px,$color-ob);
+            @include d-inline (inline-block,top);
+            max-width: 355px;
+            width: $sizewid;
+            line-height: 23px;
+        }
+        img{
+            @include d-inline (inline-block,top);
+        }
+    }
+    .right-block{
+        max-width: $blocksize;
+        width: $sizewid;
+        background-color: #F2F2F2;
+        padding:13px 0px 41px 20px;
+        @include d-inline(inline-block,top);
+        @include d-flex-wrap(flex,wrap,space-around);
+        h3{
+            @include font($font-roboto, 500, 22px, $color-blue);
+            width: $sizewid;
+            margin-bottom: 12px;
+        }
+        p{
+            @include font($font-roboto,500,20px,$color-ob);
+            @include d-inline (inline-block,top);
+            max-width: 355px;
+            width: $sizewid;
+            line-height: 23px;
+        }
+        img{
+            @include d-inline (inline-block,top);
+        }
+    }
+}
+.footer-container{
+    max-width: $sizemax;
+    width: $sizewid;
+    margin: 0 auto;
+    margin-top: 68px;
+    margin-bottom: 30px;
+    display: flex;
+    padding-left: 12px;
+    .fb-icon{
+        &::after{
+            content: " ";
+            border: 1px solid $color-blue;
+            height: 27px;
+            @include d-inline (inline-block,top);
+            margin-left: 30px;
+            margin-right: 35px;
+        }
+    }
+}
+// news.html
+.news-container{
+    max-width: $sizemax;
+    width: $sizewid;
+    margin: 0 auto;
+    margin-top: 25px;
+    .article-container{
+        width: $sizewid;
+        margin-bottom: 47px;
+    }
+}
+.article-container{
+    .date-box{
+        .box{
+            width: 56px;
+            height: 56px;
+            background-color: $color-blue;
+            @include d-flex-easy (flex,center,center);
+            @include font($font-nino, 500, 48px, $color-white);
+        }
+        .date{
+            @include font($font-nino,500,22px,$color-blue);
+            margin-top: 6px;
+        }
+    }
+}
+.article-container{
+    .article-block{
+        width: $sizewid;
+        margin-top: 24.5px;
+        @include d-flex (flex,space-between,space-between,wrap,row);
+        .article-title{
+            @include font($font-nino,500,20px,$color-black);
+            width: $sizewid;
+        }
+        img{
+            width: 270px;
+            height: 210px;
+            margin-top: 18px;
+        }
+        .article{
+            max-width: 861px;
+            width: $sizewid;
+            margin-top: 18px;
+            @include font($font-ingiri,normal,16px,$color-black);
+            p{
+                line-height: 18px;
+                &:nth-child(1){
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+}
+.news-footer{
+    margin-top: -20px;
+}
+// contact.html
+.contact-container{
+    background-color: $color-grey;
+    margin-top: 25px;
+    width: $sizewid;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    .contact-block{
+        max-width: $sizemax;
+        width: $sizewid;
+        margin: 0 auto;
+        @include d-flex(flex,space-between,flex-start,wrap,row);
+    }
+}
+.contact-box{
+    width: 258px;
+    height: 93px;
+    @include d-flex(flex,space-between,flex-start,wrap,column);
+    h1{
+        @include font($font-nino,bold,20px,$color-blue);
+    }
+    a{
+        @include font($font-ingiri,normal,16px,$color-black);
+        @include transition (all,500ms,ease-in-out);
+            &:hover{
+            color: $color-blue;
+            @include transition (all,500ms,ease-in-out);
+        }
+    }
+    span{
+        @include font ($font-ingiri,normal,16px,$color-d-grey);
+    }
+}
+.contact-map{
+    max-width: 874px;
+    width: $sizewid;
+    height: 466px;
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+}
+.contact-footer{
+    margin-top: 31px;
 }

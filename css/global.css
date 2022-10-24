@@ -164,4 +164,299 @@ a {
 }
 .main-page-container .bg-image .main-title-block h3 span {
   font-family: "Roboto";
+}
+
+.media-page-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.media-page-container .media-page-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.media-page-container .left-block {
+  max-width: 570px;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 13px 0px 41px 20px;
+  display: inline-block;
+  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.media-page-container .left-block h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22px;
+  color: #3D58A6;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.media-page-container .left-block p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 355px;
+  width: 100%;
+  line-height: 23px;
+}
+.media-page-container .left-block img {
+  display: inline-block;
+  vertical-align: top;
+}
+.media-page-container .right-block {
+  max-width: 570px;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 13px 0px 41px 20px;
+  display: inline-block;
+  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.media-page-container .right-block h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22px;
+  color: #3D58A6;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.media-page-container .right-block p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 355px;
+  width: 100%;
+  line-height: 23px;
+}
+.media-page-container .right-block img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 68px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 12px;
+}
+.footer-container .fb-icon::after {
+  content: " ";
+  border: 1px solid #3D58A6;
+  height: 27px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-right: 35px;
+}
+
+.news-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.news-container .article-container {
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.article-container .date-box .box {
+  width: 56px;
+  height: 56px;
+  background-color: #3D58A6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "BPG Nino Mtavruli";
+  font-weight: 500;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.article-container .date-box .date {
+  font-family: "BPG Nino Mtavruli";
+  font-weight: 500;
+  font-size: 22px;
+  color: #3D58A6;
+  margin-top: 6px;
+}
+
+.article-container .article-block {
+  width: 100%;
+  margin-top: 24.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.article-container .article-block .article-title {
+  font-family: "BPG Nino Mtavruli";
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  width: 100%;
+}
+.article-container .article-block img {
+  width: 270px;
+  height: 210px;
+  margin-top: 18px;
+}
+.article-container .article-block .article {
+  max-width: 861px;
+  width: 100%;
+  margin-top: 18px;
+  font-family: "BPG Ingiri Arial";
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+.article-container .article-block .article p {
+  line-height: 18px;
+}
+.article-container .article-block .article p:nth-child(1) {
+  margin-bottom: 28px;
+}
+
+.news-footer {
+  margin-top: -20px;
+}
+
+.contact-container {
+  background-color: #E6E6E6;
+  margin-top: 25px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+.contact-container .contact-block {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-box {
+  width: 258px;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-box h1 {
+  font-family: "BPG Nino Mtavruli";
+  font-weight: bold;
+  font-size: 20px;
+  color: #3D58A6;
+}
+.contact-box a {
+  font-family: "BPG Ingiri Arial";
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+  -webkit-transition: all, 500ms, ease-in-out;
+  transition: all, 500ms, ease-in-out;
+}
+.contact-box a:hover {
+  color: #3D58A6;
+  -webkit-transition: all, 500ms, ease-in-out;
+  transition: all, 500ms, ease-in-out;
+}
+.contact-box span {
+  font-family: "BPG Ingiri Arial";
+  font-weight: normal;
+  font-size: 16px;
+  color: #808080;
+}
+
+.contact-map {
+  max-width: 874px;
+  width: 100%;
+  height: 466px;
+}
+.contact-map .map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-footer {
+  margin-top: 31px;
 }/*# sourceMappingURL=global.css.map */

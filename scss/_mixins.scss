@@ -16,6 +16,15 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin d-flex-wrap($display,$wrap,$justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
 @mixin transition($property, $duration, $type){
     transition: $property, $duration, $type;
+}
+@mixin d-inline ($display, $align){
+    display: $display;
+    vertical-align: $align;
 }
