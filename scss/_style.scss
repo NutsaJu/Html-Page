@@ -1,0 +1,59 @@
+.header-container{
+    max-width: $sizemax;
+    width: $sizewid;
+    margin: 0 auto;
+    padding-top: 30px;
+    @include d-flex-easy(flex, flex-start, center);
+    .nav-block{
+        max-width: 370px;
+        width: 100%;
+        margin-left: 50px;
+        .nav-ul{
+            @include d-flex (flex, space-between, center, wrap, row);
+            a{
+                @include font ($font-nino, bold, 22px, $color-blue);
+                @include transition (all, 500ms, ease-in-out);
+                &:hover{
+                    color: $color-red;
+                    @include transition (all, 500ms, ease-in-out);
+                }
+            }
+        }
+    }
+}
+.main-page-container{
+    max-width: $sizemax;
+    width: $sizewid;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 460px;
+    .bg-image{
+        background-image: url(../images/bg-image.jpg);
+        background-position: center;
+        height: 100%;
+        padding-left: 22px;
+        @include d-flex-easy(flex, flex-start, center);
+        .main-title-block{
+            max-width: 398px;
+            width: $sizewid;
+            height: 177px;
+            h3{
+                line-height: 35px;
+                @include font ($font-nino, bold, 30px, $color-ow);
+                @include d-flex(flex, space-between, flex-start, wrap, column);
+                span{
+                    font-family: $font-roboto;
+                }
+            }
+        }
+    }
+}
+.media-page-container{
+    max-width: $sizemax;
+    width: $sizewid;
+    margin: 0 auto;
+    margin-top: 120px;
+    .media-page-title{
+        @include font ()
+    }
+}
